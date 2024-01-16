@@ -7,9 +7,12 @@
 }
 
 .EightBall-text {
-  justify-content: center;
+  /* justify-content: center; */
+  text-align: center;
+  width:100%;
   position: absolute;
   top: 50%;
-  left: 50%;
-  margin: -15px 0 0 -65px;
+  margin-top: -1em;
+  /* left: 50%; */
+  /* margin: -15px 0 0 -65px; */
 }

@@ -24,9 +24,12 @@ const DEFAULT_ANSWERS = [
   { msg: "Very doubtful.", color: "red" },
 ];
 
+/**
+ * @returns Instance of the EightBall
+ */
 function App() {
   return (
-    <EightBall answers = {DEFAULT_ANSWERS}/>
+    <EightBall answers={DEFAULT_ANSWERS} />
   );
 }
 

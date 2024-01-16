@@ -1,5 +1,5 @@
-import React, {useState } from "react";
-
+import React, { useState } from "react";
+import './EightBall.css';
 /**
  * Props:
  * answers - array of objects
@@ -11,14 +11,14 @@ import React, {useState } from "react";
  * - message : string
  *
  *
- * App -> EightBall ->
+ * App -> EightBall
  */
 
-function EightBall({ answers }){
+function EightBall({ answers }) {
   const [message, setMessage] = useState("Think of a Question");
   const [color, setColor] = useState("black");
 
-  function handleClick(evt){
+  function handleClick(evt) {
     const random = Math.floor(Math.random() * answers.length);
     setMessage(answers[random].msg);
     setColor(answers[random].color);
@@ -26,9 +26,9 @@ function EightBall({ answers }){
 
   return (
     <div className="EightBall"
-         onClick={handleClick}
-         style={{ backgroundColor: color }}>
-      <p>{message}</p>
+      onClick={handleClick}
+      style={{ backgroundColor: color }}>
+      <p className="EightBall-text">{message}</p>
     </div>
   );
 }
